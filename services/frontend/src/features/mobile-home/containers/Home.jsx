@@ -2,7 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import MobilePage from 'lib/MobilePage'
+import MobilePage, { Space, Button } from 'lib/MobilePage'
 
 const mapState = (state) => ({})
 
@@ -20,7 +20,11 @@ const Home = () => (
             FooPal
         </MobilePage.Header>
         <MobilePage.Body withPadding>
-            home
+            <Button block>Home Page</Button>
+            <Space />
+            <Button block type={'secondary'}>Home Page</Button>
+            <Space />
+            <Button block type={'link'}>Home Page</Button>
         </MobilePage.Body>
     </MobilePage>
 )
